@@ -6,7 +6,7 @@
 /*   By: treis-ro <treis-ro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 14:55:54 by treis-ro          #+#    #+#             */
-/*   Updated: 2024/01/22 16:57:12 by treis-ro         ###   ########.fr       */
+/*   Updated: 2024/01/22 16:58:22 by treis-ro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ int ft_int_putnbr(int nbr)
     return (size + 1);
 }
 
-int ft_int_hex(int nbr, char c)
+int ft_int_hex(unsigned int nbr, char c)
 {
     long    k;
     int     size;
