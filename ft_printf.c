@@ -6,7 +6,7 @@
 /*   By: treis-ro <treis-ro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 14:55:54 by treis-ro          #+#    #+#             */
-/*   Updated: 2024/01/22 14:58:38 by treis-ro         ###   ########.fr       */
+/*   Updated: 2024/01/22 15:08:52 by treis-ro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,13 +66,13 @@ int ft_int_hex(int nbr, char c)
         size += ft_int_putchar('-');
         k *= -1;
     }
-    
     if (k > 15)
         size += ft_int_hex(k / 16, c);
     else if (c == 'x')
         size += ft_int_putchar("0123456789abcdef"[(k % 16)]);
     else if (c == 'X')
         size += ft_int_putchar("0123456789ABCDEF"[(k % 16)]);
+    printf("size: %d;\nnbr: %d", size, nbr);
     return (size);
 }
 
