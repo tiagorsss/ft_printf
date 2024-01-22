@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: treis-ro <treis-ro@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: treis-ro <treis-ro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 14:55:54 by treis-ro          #+#    #+#             */
-/*   Updated: 2024/01/15 17:06:03 by treis-ro         ###   ########.fr       */
+/*   Updated: 2024/01/22 14:49:36 by treis-ro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,7 @@ int ft_int_putstr(char *str)
     }
     while (*str)
     {
-        ft_int_putchar(*str);
-        i++;
+        i += ft_int_putchar(*str);
         str++;
     }
     return (i);
@@ -67,16 +66,13 @@ int ft_int_hex(int nbr, char c)
         size += ft_int_putchar('-');
         k *= -1;
     }
+    
     if (k > 15)
         size += ft_int_hex(k / 16, c);
     if ((k % 16) > 9 && c == 'x')
-        size += ft_int_putchar('a' - 10 + (k % 16));
+        size += ft_int_putchar("0123456789abcdef"[(k % 16)]);
     else if ((k % 16) > 9 && c == 'X')
-        size += ft_int_putchar('A' - 10 + (k % 16));
-    else if ((k % 16) < 10 && c == 'x')
-        size += ft_int_putchar('0' + (k % 16));
-    else if ((k % 16) < 10 && c == 'X')
-        size += ft_int_putchar('0' + (k % 16));
+        size += ft_int_putchar("0123456789ABCDEF"[(k % 16)]);
     return (size + 1);
 }
 
