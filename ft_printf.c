@@ -6,11 +6,12 @@
 /*   By: treis-ro <treis-ro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 14:55:54 by treis-ro          #+#    #+#             */
-/*   Updated: 2024/01/22 15:08:52 by treis-ro         ###   ########.fr       */
+/*   Updated: 2024/01/22 15:10:09 by treis-ro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+#include <stdio.h>
 
 int ft_int_putchar(char c)
 {
