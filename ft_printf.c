@@ -6,7 +6,7 @@
 /*   By: treis-ro <treis-ro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 14:55:54 by treis-ro          #+#    #+#             */
-/*   Updated: 2024/01/22 15:25:46 by treis-ro         ###   ########.fr       */
+/*   Updated: 2024/01/22 16:54:58 by treis-ro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,6 @@ int ft_int_hex(int nbr, char c)
         ft_int_putchar("0123456789abcdef"[(k % 16)]);
     else if (c == 'X')
         ft_int_putchar("0123456789ABCDEF"[(k % 16)]);
-    // printf("size: %d;\nnbr: %d\n", size, nbr);
     return (size + 1);
 }
 
@@ -130,7 +129,7 @@ int check_type(const char c, va_list args)
     else if (c == 'u')
         length += ft_int_putuns(va_arg(args, unsigned int));
     else if (c == 'x' || c == 'X')
-        length += ft_int_hex(va_arg(args, int), c);
+        length += ft_int_hex(va_arg(args, unsigned int), c);
     else if (c == '%')
         length += ft_int_putchar('%');
     return length;
