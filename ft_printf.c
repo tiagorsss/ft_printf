@@ -6,7 +6,7 @@
 /*   By: treis-ro <treis-ro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 14:55:54 by treis-ro          #+#    #+#             */
-/*   Updated: 2024/01/22 15:21:18 by treis-ro         ###   ########.fr       */
+/*   Updated: 2024/01/22 15:22:54 by treis-ro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ int ft_int_hex(int nbr, char c)
     int     size;
     
     k = nbr;
-    size = 0;
+    size = -1;
     if (k < 0)
     {
         size += ft_int_putchar('-');
