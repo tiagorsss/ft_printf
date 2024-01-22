@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: treis-ro <treis-ro@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: treis-ro <treis-ro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 15:00:21 by treis-ro          #+#    #+#             */
-/*   Updated: 2023/11/14 15:03:36 by treis-ro         ###   ########.fr       */
+/*   Updated: 2024/01/22 16:58:37 by treis-ro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 int ft_int_putchar(char c);
 int ft_int_putstr(char *str);
 int ft_int_putnbr(int nbr);
-int ft_int_hex(int nbr, char c);
+int ft_int_hex(unsigned int nbr, char c);
 int ft_int_putuns(unsigned int k);
 int ft_put_ptr(unsigned long ptr);
 int ft_int_point(unsigned long ptr);
