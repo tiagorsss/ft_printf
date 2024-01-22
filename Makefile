@@ -1,4 +1,4 @@
-SRCS	=	ft_printf.c
+SRCS	=	ft_printf.c utils.c
 
 OBJS	=	$(SRCS:.c=.o)
 
@@ -6,7 +6,7 @@ CC		=	cc
 RM		=	rm -f
 CFLAGS	=	-Wall -Werror -Wextra
 
-NAME	=	ft_printf.a
+NAME	=	libftprintf.a
 
 all:	$(NAME)
 
