@@ -6,7 +6,7 @@
 /*   By: treis-ro <treis-ro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 14:55:54 by treis-ro          #+#    #+#             */
-/*   Updated: 2024/01/22 16:54:58 by treis-ro         ###   ########.fr       */
+/*   Updated: 2024/01/22 16:57:12 by treis-ro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -129,7 +129,7 @@ int check_type(const char c, va_list args)
     else if (c == 'u')
         length += ft_int_putuns(va_arg(args, unsigned int));
     else if (c == 'x' || c == 'X')
-        length += ft_int_hex(va_arg(args, unsigned int), c);
+        length += ft_int_hex((unsigned int)va_arg(args, unsigned int), c);
     else if (c == '%')
         length += ft_int_putchar('%');
     return length;
